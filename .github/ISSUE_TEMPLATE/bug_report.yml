@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible problem in software, firmware, or hardware files.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials, private network details, message audio, phone numbers, or live data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Provide the smallest safe, synthetic set of steps.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit/version, OS, board, printer, and relevant adapter without private identifiers.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification evidence
+      description: Tests, builds, container checks, or physical checks performed.

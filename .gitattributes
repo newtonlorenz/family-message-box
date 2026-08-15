@@ -1,0 +1,5 @@
+*.gcode -diff -whitespace
+*.stl binary
+*.pdf binary
+*.png binary
+*.curaprofile binary

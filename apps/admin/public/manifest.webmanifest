@@ -1,0 +1,18 @@
+{
+  "name": "Family Message Box",
+  "short_name": "Message Box",
+  "description": "The eight-button Family Message Box simulator.",
+  "start_url": "/box",
+  "scope": "/box",
+  "display": "standalone",
+  "background_color": "#1d2723",
+  "theme_color": "#1d2723",
+  "icons": [
+    {
+      "src": "/message-box-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

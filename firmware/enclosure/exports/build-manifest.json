@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "sources": {
+    "family_message_box.scad": "32f7e59a9070e36b11c71077eb3e6f9a920a246519933fa93c62b743039f6b16",
+    "printable_accessories.scad": "2e01c60ad140d9bccdad93a53ebe3446bf8764f1c8713336db1185641ceb4f3f",
+    "COMPONENT_SPECS.md": "445514f08b63c2ecbec0d7cb718844475023d10fb68ed40d66dc0f62eb3d9768"
+  },
+  "outputs": {
+    "family-message-box-base.stl": "b49a5b659c1cdcf9fcf265cf8b3d0962a73c2d1216a031c2e10ea7576227f535",
+    "family-message-box-control-lid.stl": "6a200f7ff2ac97fb7a433189dc79033224cf0a2b13caad6822095dd818ebe9c3",
+    "family-message-box-electronics-tray.stl": "4bb067dc3198ba751373beeb84f5bedcbdc964f8b4244584f8082647a8f39839",
+    "family-message-box-preview.png": "a2bfd46c987916c6f61181652d3dcd0fa8177391cdcb19776e7f988f9fbe2492",
+    "family-message-box-exploded-preview.png": "f9bd6e3dd3e8a0568f2f89580ba211b9c9968962a8be0550166d917299bb94e1"
+  }
+}

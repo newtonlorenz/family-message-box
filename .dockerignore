@@ -1,0 +1,27 @@
+.git
+.worktrees
+.env
+.certs
+.wwebjs_cache
+.wwebjs_auth
+node_modules
+**/node_modules
+dist
+**/dist
+data
+**/data
+work
+output
+coverage
+**/.pio
+firmware/enclosure/exports
+firmware/enclosure/print-ready
+firmware/enclosure/sd-card-ready
+# Firmware is release source and is not used by the server image build.
+firmware
+firmware/include/device_config.h
+*.db
+*.db-shm
+*.db-wal
+**/*.tsbuildinfo
+.DS_Store

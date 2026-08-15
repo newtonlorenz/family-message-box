@@ -1,0 +1,6 @@
+services:
+  family-box:
+    environment:
+      FIRMWARE_SIGNING_PUBLIC_KEY_PATH: /app/config/firmware-signing-public.pem
+    volumes:
+      - ./data/firmware-signing-public.pem:/app/config/firmware-signing-public.pem:ro

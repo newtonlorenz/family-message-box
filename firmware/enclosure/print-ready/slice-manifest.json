@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "slicer": "CuraEngine 5.13.0",
+  "records": {
+    "01-electronics-carrier.gcode": {
+      "sha256": "30631b86bb6a76241989ed856b2d704d3e26dabe425762d5e1e2ae255fa49947",
+      "timeSeconds": 2001,
+      "filamentMetres": 3.2166,
+      "bounds": {
+        "minX": 15.825,
+        "minY": 65.825,
+        "minZ": 0.24,
+        "maxX": 204.175,
+        "maxY": 154.175,
+        "maxZ": 3.44
+      }
+    },
+    "02-control-lid.gcode": {
+      "sha256": "e2a3cccbe2f065d851e07213b62b89bbeec16276efa9b71a3fbfda05fde38f03",
+      "timeSeconds": 24480,
+      "filamentMetres": 47.1066,
+      "bounds": {
+        "minX": 5.025,
+        "minY": 14.025,
+        "minZ": 0.24,
+        "maxX": 214.975,
+        "maxY": 205.975,
+        "maxZ": 6
+      }
+    },
+    "03-enclosure-base.gcode": {
+      "sha256": "19d2882de790984ddc43204fc82f2cbf5940709676dfe2d072b708ba4d1adc50",
+      "timeSeconds": 46469,
+      "filamentMetres": 92.6777,
+      "bounds": {
+        "minX": 2.825,
+        "minY": 12.825,
+        "minZ": 0.24,
+        "maxX": 217.175,
+        "maxY": 207.175,
+        "maxZ": 87.92
+      }
+    }
+  }
+}

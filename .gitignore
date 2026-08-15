@@ -1,0 +1,26 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+.pio/
+coverage/
+work/
+*.tsbuildinfo
+.certs/
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+firmware/include/device_config.h
+.wwebjs_cache/
+.wwebjs_auth/
+.worktrees/
+# Machine/material-specific slicer output is attached to a tagged release or
+# regenerated from the checked-in CAD, Cura profiles, and manifests.
+firmware/enclosure/**/*.gcode

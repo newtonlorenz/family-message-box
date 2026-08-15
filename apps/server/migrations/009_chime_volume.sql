@@ -1,0 +1,2 @@
+ALTER TABLE settings ADD COLUMN chime_volume INTEGER NOT NULL DEFAULT 60
+  CHECK (chime_volume BETWEEN 0 AND 80);

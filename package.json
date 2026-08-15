@@ -1,0 +1,44 @@
+{
+  "name": "family-message-box",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source eight-button family voice-message box with server, ESP32-S3 firmware, and printable enclosure.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,admin -c cyan,green \"npm run dev -w @family-box/server\" \"npm run dev -w @family-box/admin\"",
+    "build": "npm run build -w @family-box/contracts && npm run build -w @family-box/admin && npm run build -w @family-box/server",
+    "start": "npm run start -w @family-box/server",
+    "migrate": "npm run migrate -w @family-box/server",
+    "test": "vitest run --exclude '**/.worktrees/**' --exclude '**/work/**'",
+    "test:coverage": "vitest run --exclude '**/.worktrees/**' --exclude '**/work/**' --no-file-parallelism --coverage --coverage.include='apps/server/src/db.ts' --coverage.include='apps/server/src/firmware.ts' --coverage.include='apps/server/src/quiet-hours.ts' --coverage.include='apps/server/src/service.ts' --coverage.include='packages/device-core/src/index.ts' --coverage.include='scripts/firmware-release.mjs' --coverage.thresholds.lines=80 --coverage.thresholds.functions=80 --coverage.thresholds.statements=80 --coverage.thresholds.branches=80",
+    "test:firmware:native": "sh scripts/test-firmware-native.sh",
+    "typecheck": "npm run build -w @family-box/contracts && npm run typecheck --workspaces --if-present",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "simulator": "npm run simulator -w @family-box/server",
+    "lan:ca": "node scripts/serve-lan-ca.mjs",
+    "twilio:edge": "node scripts/twilio-edge.mjs",
+    "firmware:package": "node scripts/package-firmware.mjs",
+    "firmware:upload": "node scripts/upload-firmware.mjs",
+    "privacy:scan": "node scripts/public-safety.mjs",
+    "verify": "npm run privacy:scan && npm run lint && npm run typecheck && npm test && npm run test:coverage && npm run build && npm run test:firmware:native"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@vitest/coverage-v8": "^3.2.7",
+    "concurrently": "^9.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
